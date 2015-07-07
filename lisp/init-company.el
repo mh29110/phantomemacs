@@ -36,7 +36,7 @@
      (setq company-clang-insert-arguments nil)
      ))
 
-;; company should be case sensitive
+; company should be case sensitive
 (setq company-dabbrev-downcase nil)
-
+(global-set-key [(control tab)] 'company-complete-common)
 (provide 'init-company)
