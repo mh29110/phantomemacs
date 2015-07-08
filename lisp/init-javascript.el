@@ -256,4 +256,10 @@ sudo pip install jsbeautifier"
                        " *, *" t))
                 ))))
 
+;;for ac-js2-mode 
+; (add-hook 'js2-mode-hook 'ac-js2-mode)
+; (setq ac-js2-evaluate-calls t)
+; (setq ac-js2-external-libraries '("full/path/to/a-library.js"))
+
+
 (provide 'init-javascript)

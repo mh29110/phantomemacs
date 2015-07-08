@@ -112,6 +112,9 @@
 ;; need statistics of keyfreq asap
 (require 'init-keyfreq)
 (require 'init-httpd)
+(require 'init-skewer)
+(require 'ac-js2)
+
 
 ;; projectile costs 7% startup time
 
@@ -119,6 +122,7 @@
 (require 'init-misc)
 (require 'init-color-theme)
 (require 'init-emacs-w3m)
+(require 'init-custom-win)
 
 ;; {{ idle require other stuff
 (setq idle-require-idle-delay 3)
@@ -151,13 +155,14 @@
 ;; It's dependent on init-site-lisp.el
 (if (file-exists-p "~/.custom.el") (load-file "~/.custom.el"))
 
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(safe-local-variable-values (quote ((lentic-init . lentic-orgel-org-init))))
- '(session-use-package t nil (session)))
+ '(session-use-package t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -481,7 +481,7 @@ If you indend to use it to post-process candidates from a specific
 back-end, consider using the `post-completion' command instead."
   :type 'hook)
 
-(defcustom company-minimum-prefix-length 3
+(defcustom company-minimum-prefix-length 2
   "The minimum prefix length for idle completion."
   :type '(integer :tag "prefix length"))
 

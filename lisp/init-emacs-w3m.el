@@ -111,6 +111,7 @@
 (setq browse-url-generic-program
       (cond
        (*is-a-mac* "open")
+       (*win32* "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe")
        (*linux* (executable-find "firefox"))
        ))
 
