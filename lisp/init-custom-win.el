@@ -33,8 +33,8 @@
 
 ;;; ### Windows ###
 ;;; --- 用于保存和管理窗口的配置方案
-(win:startup-with-window)
-(setq win:configuration-file "~/MyEmacs/Configure-File/Windows/windows-configure") ;窗口布局管理保存文件
+;;(win:startup-with-window)
+;;(setq win:configuration-file "~/MyEmacs/Configure-File/Windows/windows-configure") ;窗口布局管理保存文件
 
 
 ;;载入ac-js2-mode  . 不能过早载入,必须在skewer-mode后,否则会导致run-skewer无法连接server
