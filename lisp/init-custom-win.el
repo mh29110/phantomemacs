@@ -1,3 +1,12 @@
+;; 在.emacs文件中添加下面这行表示使用拷贝模式
+(setq backup-by-copying t) ;; 默认是nil，开启之后使用拷贝模式
+(setq make-backup-files nil);; 设定不产生备份文件
+
+(global-set-key [f5] 'dired);;设置[f5]为调用dired命令
+
+
+(set-default-font "-outline-YaHei Consolas Hybrid-normal-normal-normal-sans-15-*-*-*-p-*-iso8859-1") ;font for win
+
 
 (setq ring-bell-function 'ignore)       ;关闭烦人的出错时的提示声
 
@@ -33,8 +42,8 @@
 
 ;;; ### Windows ###
 ;;; --- 用于保存和管理窗口的配置方案
-(win:startup-with-window)
-(setq win:configuration-file "~/MyEmacs/Configure-File/Windows/windows-configure") ;窗口布局管理保存文件
+;;(win:startup-with-window)
+;;(setq win:configuration-file "~/MyEmacs/Configure-File/Windows/windows-configure") ;窗口布局管理保存文件
 
 
 ;;载入ac-js2-mode  . 不能过早载入,必须在skewer-mode后,否则会导致run-skewer无法连接server
