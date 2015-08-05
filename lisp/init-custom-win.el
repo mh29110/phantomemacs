@@ -56,4 +56,16 @@
 ;; 不需要重复定义了.
 ; (setq browse-url-generic-program "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe")
 
+
+
+;; org capture templates  call
+;;  M-x org-capture  
+(setq org-capture-templates
+      (quote (("t" "todo" entry (file (concat org-directory "/gtd.org"))
+               "* TODO %?\n%U\n%a\n" :clock-in t :clock-resume t)
+              ("n" "note" entry (file (concat org-directory "/gtd.org"))
+               "* %? :NOTE:\n%U\n%a\n" :clock-in t :clock-resume t)
+              ("j" "Journal" entry (file+datetree (concat org-directory "/diary.org"))
+               "* %?\n%U\n" :clock-in t :clock-resume t)
+              )))
 (provide 'init-custom-win)
