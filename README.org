@@ -1,3 +1,8 @@
+* work for my windows *
+
+
+
+
 * Before start
 Please read below checklist at least once:
 - [[https://github.com/redguardtoo/emacs.d/issues/169][You can make this setup more stable]]
